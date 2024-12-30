@@ -1645,9 +1645,9 @@ hr {
   .st-site-header.st-style2 .st-social-btn.st-style1 li a:hover {
     color: #666;
   }
-  .st-site-header.st-style2 .st-main-header-left {
+  /* .st-site-header.st-style2 .st-main-header-left {
     margin-bottom: 24px;
-  }
+  } */
   .st-site-header.st-style2 .st-btn.st-style1 {
     margin-top: 20px;
     font-size: 14px;
@@ -2305,21 +2305,21 @@ hr {
 .st-slider-animation1 .st-hero.st-style1 .st-hero-title {
   opacity: 0;
   position: relative;
-  top: 30px;
+  /* top: 30px; */
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .st-slider-animation1 .st-hero.st-style1 .st-hero-subtitle {
   opacity: 0;
   position: relative;
-  top: 30px;
+  /* top: 30px; */
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .st-slider-animation1 .st-hero-btn-group {
   opacity: 0;
   position: relative;
-  top: 30px;
+  /* top: 30px; */
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -2353,7 +2353,7 @@ hr {
 }
 .st-hero-wrap.st-color1 {
   position: relative;
-  background-color: rgba(12, 184, 182, 0.1);
+  /* background-color: rgba(12, 184, 182, 0.1); */
 }
 .st-hero-wrap .st-hero.st-style1 .st-hero-text {
   position: relative;
@@ -2388,7 +2388,7 @@ hr {
 
 .st-hero.st-style1 .st-hero-title.cd-headline-style1 b {
   font-weight: 500;
-  color: #0cb8b6;
+  /* color: #0cb8b6; */
 }
 .st-hero.st-style1 .st-hero-title.cd-headline-style1 b:before {
   display: none;
@@ -2420,7 +2420,8 @@ hr {
   }
   .st-hero.st-style1,
   .st-hero.st-style1.st-type3 {
-    height: 550px;
+    height: 850px;
+    width: 450px;
   }
   .st-hero.st-style1 .st-hero-title,
   .st-hero.st-style1.st-type3 .st-hero-title {
@@ -2428,7 +2429,7 @@ hr {
   }
   .st-hero.st-style1 .st-hero-subtitle {
     font-size: 16px;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
   }
   .st-hero-shape {
     height: 400px;
@@ -2436,9 +2437,9 @@ hr {
   .st-hero.st-style1 .st-hero-title.cd-headline.slide b:before {
     height: 45px;
   }
-  .st-hero.st-style1.st-size1 {
-    height: 580px;
-  }
+  /* .st-hero.st-style1.st-size1 {
+    /* height: 580px; */
+  } */
   .st-hero.st-style1 .st-hero-mini-title {
     font-size: 20px;
   }
@@ -2463,8 +2464,8 @@ hr {
     margin-top: 40px;
   }
   .st-hero.st-style1.st-type1 {
-    padding-top: 80px;
-    padding-bottom: 100px;
+    /* padding-top: 80px;
+    padding-bottom: 100px; */
     height: inherit;
   }
   .st-hero-img-group .st-lg-img {

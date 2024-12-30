@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
   <!-- Meta Tags -->
   <meta charset="utf-8">
@@ -7,9 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="">
   <!-- Page Title -->
-  <title>Nischinto - Medical landing page HTML template</title>
+  <title>Hyderabad Vein Center</title>
   <!-- Favicon Icon -->
-  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="icon" href="assets/img/MainLogo.png" />
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/fontawesome.css" />
@@ -20,17 +21,97 @@
   <link rel="stylesheet" href="assets/css/textRotate.css" />
   <link rel="stylesheet" href="assets/css/select2.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-</head>
 
+</head>
+<style>
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 9999; /* Ensure modal is on top of all other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black with opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  position: relative; /* Ensure modal content is positioned correctly */
+  z-index: 10000; /* Ensure modal content stays above scrolling text */
+}
+
+/* The Close Button */
+.close-btn {
+  color: #aaa;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Styling for the scrolling text */
+.st-section-heading-subtitle {
+  position: relative;
+  z-index: 10; /* Ensures scrolling text does not overlay on form */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* If you want the scrolling text to scroll, you can add animation */
+
+
+/* Animation for scrolling text */
+@keyframes scroll-text {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+</style>
 
 <body>
+
+  
   <div class="st-perloader">
     <div class="st-perloader-in">
       <div class="st-wave-first">
-        <svg   enable-background="new 0 0 300.08 300.08" viewBox="0 0 300.08 300.08" xmlns="http://www.w3.org/2000/svg"><g><path d="m293.26 184.14h-82.877l-12.692-76.138c-.546-3.287-3.396-5.701-6.718-5.701-.034 0-.061 0-.089 0-3.369.027-6.199 2.523-6.677 5.845l-12.507 87.602-14.874-148.69c-.355-3.43-3.205-6.056-6.643-6.138-.048 0-.096 0-.143 0-3.39 0-6.274 2.489-6.752 5.852l-19.621 137.368h-9.405l-12.221-42.782c-.866-3.028-3.812-5.149-6.8-4.944-3.13.109-5.777 2.332-6.431 5.395l-8.941 42.332h-73.049c-3.771 0-6.82 3.049-6.82 6.82 0 3.778 3.049 6.82 6.82 6.82h78.566c3.219 0 6.002-2.251 6.67-5.408l4.406-20.856 6.09 21.313c.839 2.939 3.526 4.951 6.568 4.951h20.46c3.396 0 6.274-2.489 6.752-5.845l12.508-87.596 14.874 148.683c.355 3.437 3.205 6.056 6.643 6.138h.143c3.39 0 6.274-2.489 6.752-5.845l14.227-99.599 6.397 38.362c.546 3.287 3.396 5.702 6.725 5.702h88.66c3.771 0 6.82-3.049 6.82-6.82-.001-3.772-3.05-6.821-6.821-6.821z" /></g></svg>
+        <svg enable-background="new 0 0 300.08 300.08" viewBox="0 0 300.08 300.08" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path
+              d="m293.26 184.14h-82.877l-12.692-76.138c-.546-3.287-3.396-5.701-6.718-5.701-.034 0-.061 0-.089 0-3.369.027-6.199 2.523-6.677 5.845l-12.507 87.602-14.874-148.69c-.355-3.43-3.205-6.056-6.643-6.138-.048 0-.096 0-.143 0-3.39 0-6.274 2.489-6.752 5.852l-19.621 137.368h-9.405l-12.221-42.782c-.866-3.028-3.812-5.149-6.8-4.944-3.13.109-5.777 2.332-6.431 5.395l-8.941 42.332h-73.049c-3.771 0-6.82 3.049-6.82 6.82 0 3.778 3.049 6.82 6.82 6.82h78.566c3.219 0 6.002-2.251 6.67-5.408l4.406-20.856 6.09 21.313c.839 2.939 3.526 4.951 6.568 4.951h20.46c3.396 0 6.274-2.489 6.752-5.845l12.508-87.596 14.874 148.683c.355 3.437 3.205 6.056 6.643 6.138h.143c3.39 0 6.274-2.489 6.752-5.845l14.227-99.599 6.397 38.362c.546 3.287 3.396 5.702 6.725 5.702h88.66c3.771 0 6.82-3.049 6.82-6.82-.001-3.772-3.05-6.821-6.821-6.821z" />
+          </g>
+        </svg>
       </div>
       <div class="st-wave-second">
-        <svg   enable-background="new 0 0 300.08 300.08" viewBox="0 0 300.08 300.08" xmlns="http://www.w3.org/2000/svg"><g><path d="m293.26 184.14h-82.877l-12.692-76.138c-.546-3.287-3.396-5.701-6.718-5.701-.034 0-.061 0-.089 0-3.369.027-6.199 2.523-6.677 5.845l-12.507 87.602-14.874-148.69c-.355-3.43-3.205-6.056-6.643-6.138-.048 0-.096 0-.143 0-3.39 0-6.274 2.489-6.752 5.852l-19.621 137.368h-9.405l-12.221-42.782c-.866-3.028-3.812-5.149-6.8-4.944-3.13.109-5.777 2.332-6.431 5.395l-8.941 42.332h-73.049c-3.771 0-6.82 3.049-6.82 6.82 0 3.778 3.049 6.82 6.82 6.82h78.566c3.219 0 6.002-2.251 6.67-5.408l4.406-20.856 6.09 21.313c.839 2.939 3.526 4.951 6.568 4.951h20.46c3.396 0 6.274-2.489 6.752-5.845l12.508-87.596 14.874 148.683c.355 3.437 3.205 6.056 6.643 6.138h.143c3.39 0 6.274-2.489 6.752-5.845l14.227-99.599 6.397 38.362c.546 3.287 3.396 5.702 6.725 5.702h88.66c3.771 0 6.82-3.049 6.82-6.82-.001-3.772-3.05-6.821-6.821-6.821z" /></g></svg>
+        <svg enable-background="new 0 0 300.08 300.08" viewBox="0 0 300.08 300.08" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path
+              d="m293.26 184.14h-82.877l-12.692-76.138c-.546-3.287-3.396-5.701-6.718-5.701-.034 0-.061 0-.089 0-3.369.027-6.199 2.523-6.677 5.845l-12.507 87.602-14.874-148.69c-.355-3.43-3.205-6.056-6.643-6.138-.048 0-.096 0-.143 0-3.39 0-6.274 2.489-6.752 5.852l-19.621 137.368h-9.405l-12.221-42.782c-.866-3.028-3.812-5.149-6.8-4.944-3.13.109-5.777 2.332-6.431 5.395l-8.941 42.332h-73.049c-3.771 0-6.82 3.049-6.82 6.82 0 3.778 3.049 6.82 6.82 6.82h78.566c3.219 0 6.002-2.251 6.67-5.408l4.406-20.856 6.09 21.313c.839 2.939 3.526 4.951 6.568 4.951h20.46c3.396 0 6.274-2.489 6.752-5.845l12.508-87.596 14.874 148.683c.355 3.437 3.205 6.056 6.643 6.138h.143c3.39 0 6.274-2.489 6.752-5.845l14.227-99.599 6.397 38.362c.546 3.287 3.396 5.702 6.725 5.702h88.66c3.771 0 6.82-3.049 6.82-6.82-.001-3.772-3.05-6.821-6.821-6.821z" />
+          </g>
+        </svg>
       </div>
     </div>
   </div>
@@ -39,75 +120,100 @@
     <div class="st-top-header">
       <div class="container">
         <div class="st-top-header-in">
-          <ul class="st-top-header-list">            
+          <ul class="st-top-header-list">
+            <!-- Email -->
             <li>
-              <svg   enable-background="new 0 0 479.058 479.058" viewBox="0 0 479.058 479.058" xmlns="http://www.w3.org/2000/svg"><path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/></svg>
-              <a href="#">info@hyderabadviencenter.com</a></li>
+              <svg enable-background="new 0 0 479.058 479.058" viewBox="0 0 479.058 479.058"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z" />
+              </svg>
+              <a href="mailto:info@hyderabadveincenter.com"  style="color: #e2296a;">info@hyderabadveincenter.com</a>
+            </li>
+            <!-- Phone -->
             <li>
-            <svg   enable-background="new 0 0 512.021 512.021" viewBox="0 0 512.021 512.021" xmlns="http://www.w3.org/2000/svg"><g><path d="m367.988 512.021c-16.528 0-32.916-2.922-48.941-8.744-70.598-25.646-136.128-67.416-189.508-120.795s-95.15-118.91-120.795-189.508c-8.241-22.688-10.673-46.108-7.226-69.612 3.229-22.016 11.757-43.389 24.663-61.809 12.963-18.501 30.245-33.889 49.977-44.5 21.042-11.315 44.009-17.053 68.265-17.053 7.544 0 14.064 5.271 15.645 12.647l25.114 117.199c1.137 5.307-.494 10.829-4.331 14.667l-42.913 42.912c40.482 80.486 106.17 146.174 186.656 186.656l42.912-42.913c3.837-3.837 9.36-5.466 14.667-4.331l117.199 25.114c7.377 1.581 12.647 8.101 12.647 15.645 0 24.256-5.738 47.224-17.054 68.266-10.611 19.732-25.999 37.014-44.5 49.977-18.419 12.906-39.792 21.434-61.809 24.663-6.899 1.013-13.797 1.518-20.668 1.519zm-236.349-479.321c-31.995 3.532-60.393 20.302-79.251 47.217-21.206 30.265-26.151 67.49-13.567 102.132 49.304 135.726 155.425 241.847 291.151 291.151 34.641 12.584 71.867 7.64 102.132-13.567 26.915-18.858 43.685-47.256 47.217-79.251l-95.341-20.43-44.816 44.816c-4.769 4.769-12.015 6.036-18.117 3.168-95.19-44.72-172.242-121.772-216.962-216.962-2.867-6.103-1.601-13.349 3.168-18.117l44.816-44.816z"/><path d="m496.02 272c-8.836 0-16-7.164-16-16 0-123.514-100.486-224-224-224-8.836 0-16-7.164-16-16s7.164-16 16-16c68.381 0 132.668 26.628 181.02 74.98s74.98 112.639 74.98 181.02c0 8.836-7.163 16-16 16z"/><path d="m432.02 272c-8.836 0-16-7.164-16-16 0-88.224-71.776-160-160-160-8.836 0-16-7.164-16-16s7.164-16 16-16c105.869 0 192 86.131 192 192 0 8.836-7.163 16-16 16z"/><path d="m368.02 272c-8.836 0-16-7.164-16-16 0-52.935-43.065-96-96-96-8.836 0-16-7.164-16-16s7.164-16 16-16c70.58 0 128 57.42 128 128 0 8.836-7.163 16-16 16z"/></g></svg>
-              <a href="#">+91 7207947968</a></li>
+              <svg enable-background="new 0 0 512.021 512.021" viewBox="0 0 512.021 512.021"
+                xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path
+                    d="m367.988 512.021c-16.528 0-32.916-2.922-48.941-8.744-70.598-25.646-136.128-67.416-189.508-120.795s-95.15-118.91-120.795-189.508c-8.241-22.688-10.673-46.108-7.226-69.612 3.229-22.016 11.757-43.389 24.663-61.809 12.963-18.501 30.245-33.889 49.977-44.5 21.042-11.315 44.009-17.053 68.265-17.053 7.544 0 14.064 5.271 15.645 12.647l25.114 117.199c1.137 5.307-.494 10.829-4.331 14.667l-42.913 42.912c40.482 80.486 106.17 146.174 186.656 186.656l42.912-42.913c3.837-3.837 9.36-5.466 14.667-4.331l117.199 25.114c7.377 1.581 12.647 8.101 12.647 15.645 0 24.256-5.738 47.224-17.054 68.266-10.611 19.732-25.999 37.014-44.5 49.977-18.419 12.906-39.792 21.434-61.809 24.663-6.899 1.013-13.797 1.518-20.668 1.519zm-236.349-479.321c-31.995 3.532-60.393 20.302-79.251 47.217-21.206 30.265-26.151 67.49-13.567 102.132 49.304 135.726 155.425 241.847 291.151 291.151 34.641 12.584 71.867 7.64 102.132-13.567 26.915-18.858 43.685-47.256 47.217-79.251l-95.341-20.43-44.816 44.816c-4.769 4.769-12.015 6.036-18.117 3.168-95.19-44.72-172.242-121.772-216.962-216.962-2.867-6.103-1.601-13.349 3.168-18.117l44.816-44.816z" />
+                  <path
+                    d="m496.02 272c-8.836 0-16-7.164-16-16 0-123.514-100.486-224-224-224-8.836 0-16-7.164-16-16s7.164-16 16-16c68.381 0 132.668 26.628 181.02 74.98s74.98 112.639 74.98 181.02c0 8.836-7.163 16-16 16z" />
+                  <path
+                    d="m432.02 272c-8.836 0-16-7.164-16-16 0-88.224-71.776-160-160-160-8.836 0-16-7.164-16-16s7.164-16 16-16c105.869 0 192 86.131 192 192 0 8.836-7.163 16-16 16z" />
+                  <path
+                    d="m368.02 272c-8.836 0-16-7.164-16-16 0-52.935-43.065-96-96-96-8.836 0-16-7.164-16-16s7.164-16 16-16c70.58 0 128 57.42 128 128 0 8.836-7.163 16-16 16z" />
+                </g>
+              </svg>
+              <a href="tel:+917207947968"  style="color: #e2296a;">+91 7207947968</a>
+            </li>
           </ul>
-          <a href="#appointment" class="st-top-header-btn st-smooth-move">Book Your Appointment</a>
+          <a href="#contact" class="st-top-header-btn st-smooth-move" style="color: #e2296a;">Book Your Appointment</a>
         </div>
       </div>
+
     </div>
     <div class="st-main-header">
       <div class="container">
         <div class="st-main-header-in">
           <div class="st-main-header-left">
-            <a class="st-site-branding" href="index.html"><img src="assets/img/MainLogo.png" alt="Nischinto" style="height: 45px; width: 142px;"></a>
+            <a class="st-site-branding" href="index.html"><img src="assets/img/MainLogo.png"
+                style="height: 75px; width: 250px;" alt="Nischinto" />
+            </a>
           </div>
           <div class="st-main-header-right">
             <div class="st-nav">
               <ul class="st-nav-list st-onepage-nav">
-                <li><a href="#home" class="st-smooth-move">Home</a></li>
-                <li><a href="#about" class="st-smooth-move">About</a></li>
-                <li><a href="#procedure" class="st-smooth-move">Before & After </a></li>
-                <li><a href="#gallery" class="st-smooth-move">Testimonials</a></li>
-                <li><a href="#faq" class="st-smooth-move">FAQ</a></li>
-                <li><a href="#contact" class="st-smooth-move">Contact</a></li>
+                <li><a href="#home" class="st-smooth-move" data-target="home">Home</a></li>
+                <li><a href="#about" class="st-smooth-move" data-target="about">About</a></li>
+                <li><a href="#before" class="st-smooth-move" data-target="before">Before & After</a></li>
+                <li><a href="#gallery" class="st-smooth-move" data-target="gallery">Testimonials</a></li>
+                <li><a href="#faq" class="st-smooth-move" data-target="faq">FAQ</a></li>
+                <li><a href="#contact" class="st-smooth-move" data-target="contact">Contact</a></li>
               </ul>
             </div>
-          </div>
+          </div>          
         </div>
       </div>
     </div>
   </header>
   <!-- End Header Section -->
 
-  <div class="st-content">
+  <div class="st-content" id="home  ">
     <!-- Start Hero Seciton -->
-    <div class="st-height-b125 st-height-lg-b80"></div>
-    <div class="st-hero-wrap st-color1 st-gray-bg overflow-hidden st-shape-wrap">
-      <div class="st-shape1"><img src="assets/img/shape/contact-shape1.svg" alt="shape1"></div>
-      <div class="st-shape2"><img src="assets/img/shape/contact-shape2.svg" alt="shape2"></div>
-      <div class="st-wave-animation"></div>
-      <div class="st-wave-animation st-wave-animation-2"></div>
+
+    <!-- <div class="st-hero-wrap  st-shape-wrap">
+      <div class="st-shape1"><img src="assets/img/banner111.jpeg"   object-fit: contain;" alt="shape1"></div>
+      
+      
       <div class="st-hero st-style1 text-center">
-        <div class="container">
-          <div class="st-hero-text">
-            <h1 class="st-hero-title cd-headline clip">
-              Hyderabad’s Best Vein Care Center.
-              <!-- <span class="cd-words-wrapper">
-                <b class="is-visible">Crutches.</b>
-                <b>Laboratory.</b>
-                
-              </span> -->
-            </h1>
-            <div class="st-hero-subtitle"><h3>Varicose Veins Treatment by Internationally-Qualified Doctor.</h3></div>
-            <div class="st-hero-btn">
-              <a href="#appointment" class="st-btn st-style1 st-color1 st-smooth-move">Book Your Appointment</a>
-            </div>
-            <div class="st-height-b10 st-height-lg-b10"></div>
-          </div>
-        </div>
+        
       </div>
+    </div> -->
+
+    <div>
+      <img src="assets/img/banner111.jpeg"   object-fit: contain;" alt="shape1">
     </div>
+    <div>
+     
+      <div class="col-lg-12" style="margin-top: 20px; display: flex; justify-content: center;">
+        <a href="tel:+917207947968" style="width: 100%;  display: flex; justify-content: center;" >
+          <button class="st-btn st-style1 st-color1 st-size-medium" type="button" id="submit"
+            style="background-color: #66387e; font-size: 16px;">
+            Call Now
+          </button>
+        </a>
+      </div>
+     
+      
+    </div>
+   
+    
     <!-- End Hero Seciton -->
 
     <!-- Start Feature Seciton -->
-    <section id="about">
-      <div class="st-height-b120 st-height-lg-b80"></div>
+    <section id="about" style="margin-top: 20px;">
+      
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -115,96 +221,94 @@
               <div class="st-iconbox-icon st-purple-box">
                 <img src="assets/img/F treatment-1.png" alt="shape1" style="height: 50px; width: 50px;">
               </div>
-              <h2 class="st-iconbox-title">Fast Treatments
-                </h2>
+              <h2 class="st-iconbox-title">Fast Treatments</h2>
               <div class="st-iconbox-text">Most of our treatments take around one hour.</div>
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
-          </div><!-- .col -->
+          </div>
           <div class="col-lg-4">
             <div class="st-iconbox st-style1">
               <div class="st-iconbox-icon st-green-box">
-                
                 <img src="assets/img/No-1.png" alt="shape1" style="height: 50px; width: 50px;">
               </div>
-              <h2 class="st-iconbox-title">No Cutting or Stitching
-               </h2>
-              <div class="st-iconbox-text"> We only provide non-surgical treatments that do not cause much pain.</div>
+              <h2 class="st-iconbox-title">No Cutting or Stitching</h2>
+              <div class="st-iconbox-text">We only provide non-surgical treatments that cause little or no pain.</div>
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
-          </div><!-- .col -->
+          </div>
           <div class="col-lg-4">
             <div class="st-iconbox st-style1">
               <div class="st-iconbox-icon st-red-box">
                 <img src="assets/img/no-hospitalization.png" alt="shape1" style="height: 50px; width: 50px;">
               </div>
-              <h2 class="st-iconbox-title">No Hospitalisation
-              </h2>
-              <div class="st-iconbox-text">  Most patients go home on the same day of treatment.</div>
+              <h2 class="st-iconbox-title">No Hospitalisation</h2>
+              <div class="st-iconbox-text">Most patients go home on the same day of treatment.</div>
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
-          </div><!-- .col -->
+          </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="st-height-b120 st-height-lg-b80"></div>
+     
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
-            <div class="st-iconbox st-style1">
+            <div class="st-iconbox st-style1" style="margin-top: 10px;">
               <div class="st-iconbox-icon st-purple-box">
                 <img src="assets/img/insurance.png" alt="shape1" style="height: 50px; width: 50px;">
               </div>
               <h2 class="st-iconbox-title">Insurance Accepted
-                </h2>
+              </h2>
               <div class="st-iconbox-text">You may get a cashless treatment if you have a major insurance.</div>
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
           </div><!-- .col -->
           <div class="col-lg-4">
-            <div class="st-iconbox st-style1">
+            <div class="st-iconbox st-style1" style="margin-top: 10px;">
               <div class="st-iconbox-icon st-green-box">
-                
-                <img src="assets/img/usfda-certificate-service.jpg" alt="shape1" style="height: 50px; width: 50px;">
+
+                <img src="assets/img/usfda-certificate-service.png" alt="shape1" style="height: 50px; width: 50px;">
               </div>
-              <h2 class="st-iconbox-title">USFDA Approved Treatments
+              <h2 class="st-iconbox-title">USFDA Treatments
               </h2>
-              <div class="st-iconbox-text"> We follow international standards of treatment</div>
+              <div class="st-iconbox-text"> We follow international standards of treatment.</div>
             </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
+            <div class="st-height-b0 st-height-lg-b30" style="margin-top: 10px;"></div>
           </div><!-- .col -->
           <div class="col-lg-4">
-            <div class="st-iconbox st-style1">
-              <div class="st-iconbox-icon st-red-box">
+            <div class="st-iconbox st-style1" style="margin-top: 10px;">
+              <div class="st-iconbox-icon st-green-box">
+
                 <img src="assets/img/no side-effect.png" alt="shape1" style="height: 50px; width: 50px;">
               </div>
               <h2 class="st-iconbox-title">Zero Side Effects
-                </h2>
-              <div class="st-iconbox-text">The treatments rarely cause any side effects.</div>
+              </h2>
+              <div class="st-iconbox-text">The treatments rarely cause any side effects./div>
             </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
+            <div class="st-height-b0 st-height-lg-b30" style="margin-top: 10px;"></div>
           </div><!-- .col -->
+         
         </div>
       </div>
     </section>
     <!-- End Feature Seciton -->
 
     <!-- Start About Seciton -->
-   
+
     <!-- End About Seciton -->
 
     <!-- Start department Section -->
-    
+
     <!-- End department Section -->
 
     <!-- Start Service Section -->
-   
+
     <!-- End Service Section -->
 
     <!-- Start Team Section -->
-   
+
     <!-- End Team Section -->
     <hr>
     <!-- Start gallery Section -->
@@ -212,24 +316,23 @@
     <!-- End gallery Section -->
 
     <!-- Start Before After -->
-    <section class="st-before-after-section st-dynamic-bg st-bg" data-src="assets/img/before-after-bg.jpg" style="margin-top: 30px;" id="procedure">
-      <div class="st-height-b120 st-height-lg-b80"></div>
+    <section class="st-before-after-section st-dynamic-bg st-bg" data-src="assets/img/before-after-bg.jpg" id="before" style="margin-top: 20px;">
+     
       <div class="container">
         <div class="st-section-heading st-style1">
-          <h2 class="st-section-heading-title">Before and After Treatment</h2>
-          <div class="st-seperator">
-           
-          </div>
-          <div class="st-section-heading-subtitle"><h3>Our varicose veins treatments provide excellent results that relieve <br>the symptoms and also provide cosmetic improvements.</h3></div>
+          <h2 class="st-section-heading-title" style="color: #29265c;">Before and After </h2>
+
+          <div class="st-section-heading-subtitle">Our varicose veins treatments provide excellent results that relieve
+            the symptoms <br>and also provide cosmetic improvements</div>
         </div>
-        <div class="st-height-b40 st-height-lg-b40"></div>
+       
       </div>
       <div class="st-before-after-wrap">
-        <div class="container">
+        <div class="container" style="height: 460px; width: 620px;">
           <div class="st-before-after-in">
             <div class="st-before-after">
-              <div class="st-after st-single-slide st-dynamic-bg" data-src="assets/img/after11.jpg"></div>
-              <!-- <div class="st-before st-single-slide st-dynamic-bg" data-src="assets/img/before.jpg"></div> -->
+              <div class="st-after st-single-slide st-dynamic-bg" data-src="assets/img/after.jpeg"></div>
+              <div class="st-before st-single-slide st-dynamic-bg" data-src="assets/img/before.jpeg"></div>
               <div class="st-handle-before-after">
                 <span></span>
               </div>
@@ -245,20 +348,24 @@
       <div class="st-height-b120 st-height-lg-b80"></div>
       <div class="container">
         <div class="st-section-heading st-style1">
-          <h2 class="st-section-heading-title">Patient Testimonials
-           </h2>
+          <h2 class="st-section-heading-title" style="color: #29265c;">Patient Testimonials
+          </h2>
           <div class="st-seperator">
             <!-- <div class="st-seperator-left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s"></div>
             <div class="st-seperator-center"><img src="assets/img/icons/4.png" alt="icon"></div>
             <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s"></div> -->
           </div>
-          <div class="st-section-heading-subtitle"> <h3>Read what our patients say about us.</h3></div>
+          <div class="st-section-heading-subtitle">
+            <h3 style="color: #29265c;">Read what our patients say about us.</h3>
+          </div>
         </div>
         <div class="st-height-b40 st-height-lg-b40"></div>
       </div>
       <div class="container">
         <div class="st-slider st-style2 st-pricing-wrap">
-          <div class="slick-container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0"  data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3" data-lg-slides="3" data-add-slides="3">
+          <div class="slick-container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0"
+            data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3"
+            data-lg-slides="3" data-add-slides="3">
             <div class="slick-wrapper">
               <div class="slick-slide-in">
                 <div class="st-testimonial st-style1 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
@@ -269,8 +376,23 @@
                       <!-- <div class="st-testimonial-designation">UX Designer</div> -->
                     </div>
                   </div>
-                  <div class="st-testimonial-text">Excellent sevice overall from all the staff. Experienced doctors add all the value to the hospital. Truly delighted to have experience the service.</div>
+                  <div class="st-testimonial-text">Excellent sevice overall from all the staff. Experienced doctors add
+                    all the value to the hospital. Truly delighted to have experienced the service.</div>
                   <div class="st-quote"><i class="fas fa-quote-right"></i></div>
+                  <div style="display: flex; flex-direction: row;">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.lsGmVmOX789951j9Km8RagHaHa?w=159&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                      alt="shape1" style="height: 30px; width: 30px; margin-top: 20px;">
+                    <div>
+                      <h6 style="margin-left: 15px; margin-top: 25px;">4.0/5.0</h6>
+                    </div>
+                    <div style="margin-left: 15px;">
+                      <img
+                        src="https://th.bing.com/th/id/OIP.gghRLbG7PwD-o9smBv3vZAHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        alt="shape1" style="height: 60px; width: 80px; margin-top: 3px;">
+                    </div>
+
+                  </div>
                 </div>
               </div><!-- .slick-slide-in -->
               <div class="slick-slide-in">
@@ -282,8 +404,23 @@
                       <!-- <div class="st-testimonial-designation">Biographer</div> -->
                     </div>
                   </div>
-                  <div class="st-testimonial-text">Good hospital for treatment of varicose veins. Experienced doctor and friendly staff. Great support provided by the insurance staff.</div>
+                  <div class="st-testimonial-text">Good hospital for treatment of varicose veins. Experienced doctor and
+                    friendly staff. Great support provided by the insurance staff.</div>
                   <div class="st-quote"><i class="fas fa-quote-right"></i></div>
+                  <div style="display: flex; flex-direction: row;">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.lsGmVmOX789951j9Km8RagHaHa?w=159&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                      alt="shape1" style="height: 30px; width: 30px; margin-top: 20px;">
+                    <div>
+                      <h6 style="margin-left: 15px; margin-top: 25px;">5.0/5.0</h6>
+                    </div>
+                    <div style="margin-left: 15px;">
+                      <img
+                        src="https://www.creativefabrica.com/wp-content/uploads/2018/11/Five-stars-logo-by-meisuseno-312x208.jpg"
+                        alt="shape1" style="height: 60px; width: 80px; margin-top: 3px;">
+                    </div>
+
+                  </div>
                 </div>
               </div><!-- .slick-slide-in -->
               <div class="slick-slide-in">
@@ -295,16 +432,32 @@
                       <!-- <div class="st-testimonial-designation">Executive</div> -->
                     </div>
                   </div>
-                  <div class="st-testimonial-text">A very good hospital particularly in respect of varicos veins treatment. Very advance treatment with radiofrequency ablation.</div>
+                  <div class="st-testimonial-text">A very good hospital particularly in respect of varicose veins
+                    treatment. Very advanced treatment with radiofrequency ablation.</div>
                   <div class="st-quote"><i class="fas fa-quote-right"></i></div>
+                  <div style="display: flex; flex-direction: row;">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.lsGmVmOX789951j9Km8RagHaHa?w=159&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                      alt="shape1" style="height: 30px; width: 30px; margin-top: 20px;">
+                    <div>
+                      <h6 style="margin-left: 15px; margin-top: 25px;">4.0/5.0</h6>
+                    </div>
+                    <div style="margin-left: 15px;">
+                      <img
+                        src="https://th.bing.com/th/id/OIP.gghRLbG7PwD-o9smBv3vZAHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        alt="shape1" style="height: 60px; width: 80px; margin-top: 3px;">
+                    </div>
+
+                  </div>
                 </div>
               </div><!-- .slick-slide-in -->
-             
-            
-             
+
+
+
             </div>
           </div><!-- .slick-container -->
-          <div class="pagination st-style1 st-flex st-hidden"></div> <!-- If dont need Pagination then add class .st-hidden -->
+          <div class="pagination st-style1 st-flex st-hidden"></div>
+          <!-- If dont need Pagination then add class .st-hidden -->
           <div class="swipe-arrow st-style1"> <!-- If dont need navigation then add class .st-hidden -->
             <div class="slick-arrow-left"><i class="fa fa-chevron-left"></i></div>
             <div class="slick-arrow-right"><i class="fa fa-chevron-right"></i></div>
@@ -320,7 +473,7 @@
       <div class="st-shape4">
         <img src="assets/img/shape/section_shape.png" alt="shape1">
       </div>
-      <div class="st-height-b120 st-height-lg-b80"></div>
+      
       <div class="container">
         <div class="row">
           <div class="col-xl-6">
@@ -328,24 +481,40 @@
               <div class="col-lg-6">
                 <div class="st-funfact st-style1">
                   <div class="st-funfact-icon st-purple-box">
-                    <svg   enable-background="new 0 0 512 512"  viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg"><g><path d="m316 76c0-33.084-26.916-60-60-60s-60 26.916-60 60 26.916 60 60 60 60-26.916 60-60zm-60 40c-22.056 0-40-17.944-40-40s17.944-40 40-40 40 17.944 40 40-17.944 40-40 40z"/><path d="m346 266v-40c0-49.626-40.374-90-90-90s-90 40.374-90 90v40c0 5.523 4.478 10 10 10h160c5.522 0 10-4.477 10-10zm-20-10h-140v-30c0-38.598 31.402-70 70-70s70 31.402 70 70z"/><path d="m71.858 408.114 48.142 24.067v53.819c0 5.523 4.478 10 10 10h106c5.522 0 10-4.477 10-10v-127.22c0-31.783-23.452-59.203-53.391-62.423-.795-.15-38.649-2.971-56.948-21.258l-27.38-27.379c-7.556-7.558-17.6-11.72-28.281-11.72v-80c0-22.056-17.944-40-40-40s-40 17.944-40 40v135.84c0 49.212 27.798 94.239 71.858 116.274zm-51.858-252.114c0-11.028 8.972-20 20-20s20 8.972 20 20v85.361c-12.196 7.052-20 20.2-20 34.639 0 10.68 4.162 20.723 11.719 28.28l51.21 51.22c3.903 3.905 10.236 3.907 14.142.001 3.905-3.905 3.906-10.236.001-14.142l-51.21-51.221c-3.78-3.779-5.862-8.8-5.862-14.138 0-8.464 5.357-16.044 13.332-18.861.003-.001.006-.003.009-.004h.001c6.88-2.439 15.066-1.005 20.797 4.726l27.383 27.383c18.65 18.637 45.831 23.879 68.836 26.986.037.004.075.009.113.013 19.923 2.142 35.529 20.827 35.529 42.537v117.22h-86v-50c0-3.788-2.141-7.251-5.528-8.944l-53.669-26.83c-37.504-18.757-60.803-56.456-60.803-98.386z"/><circle cx="459" cy="384" r="10"/><path d="m472 116c-22.056 0-40 17.944-40 40v80c-10.681 0-20.725 4.162-28.281 11.719l-27.377 27.377c-15.96 15.949-41.848 18.608-56.951 21.262-29.939 3.22-53.391 30.639-53.391 62.422v127.22c0 5.523 4.478 10 10 10h106c5.522 0 10-4.477 10-10v-53.819l32.73-16.362c4.939-2.47 6.942-8.476 4.473-13.417-2.469-4.939-8.474-6.942-13.416-4.473l-38.259 19.125c-3.387 1.695-5.528 5.158-5.528 8.946v50h-86v-117.22c0-21.71 15.606-40.395 35.529-42.538.038-.004.076-.008.113-.013 23.361-3.155 50.206-8.368 68.839-26.988l27.38-27.38c5.724-5.724 13.913-7.166 20.797-4.726h.001c.003.001.006.003.009.004 7.975 2.817 13.332 10.397 13.332 18.861 0 5.338-2.082 10.359-5.861 14.14l-51.21 51.22c-3.905 3.906-3.904 10.237.001 14.142 3.904 3.904 10.237 3.905 14.142-.001l51.21-51.22c7.556-7.558 11.718-17.601 11.718-28.281 0-14.439-7.804-27.587-20-34.639v-85.361c0-11.028 8.972-20 20-20s20 8.972 20 20v135.84c0 18.296-4.617 36.46-13.353 52.528-2.639 4.852-.844 10.924 4.009 13.562 4.851 2.637 10.924.843 13.562-4.009 10.325-18.99 15.782-40.458 15.782-62.081v-135.84c0-22.056-17.944-40-40-40z"/></g></svg>
+                    <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <path
+                          d="m316 76c0-33.084-26.916-60-60-60s-60 26.916-60 60 26.916 60 60 60 60-26.916 60-60zm-60 40c-22.056 0-40-17.944-40-40s17.944-40 40-40 40 17.944 40 40-17.944 40-40 40z" />
+                        <path
+                          d="m346 266v-40c0-49.626-40.374-90-90-90s-90 40.374-90 90v40c0 5.523 4.478 10 10 10h160c5.522 0 10-4.477 10-10zm-20-10h-140v-30c0-38.598 31.402-70 70-70s70 31.402 70 70z" />
+                        <path
+                          d="m71.858 408.114 48.142 24.067v53.819c0 5.523 4.478 10 10 10h106c5.522 0 10-4.477 10-10v-127.22c0-31.783-23.452-59.203-53.391-62.423-.795-.15-38.649-2.971-56.948-21.258l-27.38-27.379c-7.556-7.558-17.6-11.72-28.281-11.72v-80c0-22.056-17.944-40-40-40s-40 17.944-40 40v135.84c0 49.212 27.798 94.239 71.858 116.274zm-51.858-252.114c0-11.028 8.972-20 20-20s20 8.972 20 20v85.361c-12.196 7.052-20 20.2-20 34.639 0 10.68 4.162 20.723 11.719 28.28l51.21 51.22c3.903 3.905 10.236 3.907 14.142.001 3.905-3.905 3.906-10.236.001-14.142l-51.21-51.221c-3.78-3.779-5.862-8.8-5.862-14.138 0-8.464 5.357-16.044 13.332-18.861.003-.001.006-.003.009-.004h.001c6.88-2.439 15.066-1.005 20.797 4.726l27.383 27.383c18.65 18.637 45.831 23.879 68.836 26.986.037.004.075.009.113.013 19.923 2.142 35.529 20.827 35.529 42.537v117.22h-86v-50c0-3.788-2.141-7.251-5.528-8.944l-53.669-26.83c-37.504-18.757-60.803-56.456-60.803-98.386z" />
+                        <circle cx="459" cy="384" r="10" />
+                        <path
+                          d="m472 116c-22.056 0-40 17.944-40 40v80c-10.681 0-20.725 4.162-28.281 11.719l-27.377 27.377c-15.96 15.949-41.848 18.608-56.951 21.262-29.939 3.22-53.391 30.639-53.391 62.422v127.22c0 5.523 4.478 10 10 10h106c5.522 0 10-4.477 10-10v-53.819l32.73-16.362c4.939-2.47 6.942-8.476 4.473-13.417-2.469-4.939-8.474-6.942-13.416-4.473l-38.259 19.125c-3.387 1.695-5.528 5.158-5.528 8.946v50h-86v-117.22c0-21.71 15.606-40.395 35.529-42.538.038-.004.076-.008.113-.013 23.361-3.155 50.206-8.368 68.839-26.988l27.38-27.38c5.724-5.724 13.913-7.166 20.797-4.726h.001c.003.001.006.003.009.004 7.975 2.817 13.332 10.397 13.332 18.861 0 5.338-2.082 10.359-5.861 14.14l-51.21 51.22c-3.905 3.906-3.904 10.237.001 14.142 3.904 3.904 10.237 3.905 14.142-.001l51.21-51.22c7.556-7.558 11.718-17.601 11.718-28.281 0-14.439-7.804-27.587-20-34.639v-85.361c0-11.028 8.972-20 20-20s20 8.972 20 20v135.84c0 18.296-4.617 36.46-13.353 52.528-2.639 4.852-.844 10.924 4.009 13.562 4.851 2.637 10.924.843 13.562-4.009 10.325-18.99 15.782-40.458 15.782-62.081v-135.84c0-22.056-17.944-40-40-40z" />
+                      </g>
+                    </svg>
                   </div>
-                  <h2 class="st-funfact-number st-counter">30</h2>
-                  <div class="st-funfact-title">Years of experience</div>
+                  <h2 class="st-funfact-number">30+</h2>
+
+                  <div class="st-funfact-title">Years of Experience</div>
                 </div>
                 <div class="st-height-b30 st-height-lg-b30"></div>
               </div><!-- .col -->
               <div class="col-lg-6">
                 <div class="st-funfact st-style1">
                   <div class="st-funfact-icon st-green-box">
-                    <svg version="1.1"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
                       <g>
-                        <path d="M107.972,291.258c-1.861-1.861-4.432-2.932-7.073-2.932c-2.631,0-5.213,1.071-7.073,2.932
+                        <path
+                          d="M107.972,291.258c-1.861-1.861-4.432-2.932-7.073-2.932c-2.631,0-5.213,1.071-7.073,2.932
                         c-1.861,1.86-2.931,4.441-2.931,7.072c0,2.642,1.071,5.213,2.931,7.083c1.861,1.861,4.442,2.921,7.073,2.921
                         s5.213-1.06,7.073-2.921c1.861-1.871,2.931-4.441,2.931-7.083C110.903,295.699,109.833,293.118,107.972,291.258z" />
                       </g>
                       <g>
-                        <path d="M202.317,291.258c-1.86-1.861-4.441-2.932-7.073-2.932c-2.631,0-5.213,1.071-7.073,2.932
+                        <path
+                          d="M202.317,291.258c-1.86-1.861-4.441-2.932-7.073-2.932c-2.631,0-5.213,1.071-7.073,2.932
                         c-1.861,1.86-2.931,4.441-2.931,7.072c0,2.642,1.07,5.213,2.931,7.083c1.861,1.861,4.442,2.921,7.073,2.921
                         s5.213-1.06,7.073-2.921c1.861-1.871,2.931-4.452,2.931-7.083C205.248,295.699,204.178,293.118,202.317,291.258z" />
                       </g>
@@ -400,14 +569,16 @@
                         C423.432,290.805,426.599,285.32,425.169,279.982z" />
                       </g>
                       <g>
-                        <path d="M416.404,342.76c-1.431-5.337-6.917-8.506-12.254-7.075c-5.338,1.431-8.504,6.915-7.074,12.253
+                        <path
+                          d="M416.404,342.76c-1.431-5.337-6.917-8.506-12.254-7.075c-5.338,1.431-8.504,6.915-7.074,12.253
                         c3.404,12.705-4.163,25.812-16.868,29.216c-6.156,1.65-12.584,0.802-18.101-2.383c-5.519-3.187-9.466-8.33-11.114-14.485
                         c-1.431-5.337-6.916-8.508-12.254-7.074c-5.337,1.431-8.504,6.916-7.074,12.253c3.033,11.318,10.291,20.777,20.438,26.635
                         c6.758,3.902,14.26,5.896,21.861,5.896c3.811,0,7.646-0.5,11.425-1.514C408.75,390.222,422.663,366.121,416.404,342.76z" />
                       </g>
                     </svg>
                   </div>
-                  <h2 class="st-funfact-number st-counter">10000</h2>
+                  <h2 class="st-funfact-number">10,000+</h2>
+
                   <div class="st-funfact-title">Happy Patients</div>
                 </div>
                 <div class="st-height-b30 st-height-lg-b30"></div>
@@ -415,10 +586,10 @@
               <div class="col-lg-6">
                 <div class="st-funfact st-style1">
                   <div class="st-funfact-icon st-orange-box">
-                    <svg version="1.1"   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 512 512" xml:space="preserve">
-                    <g>
-                      <path d="M482.726,485.783l-22.65-132.603c-2.441-14.287-12.576-25.764-26.453-29.95l-61.092-18.433
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                      <g>
+                        <path d="M482.726,485.783l-22.65-132.603c-2.441-14.287-12.576-25.764-26.453-29.95l-61.092-18.433
                       c-1.265-14.934-7.388-29.023-17.578-40.175c-8.151-8.92-18.403-15.415-29.704-18.999c1.934-2.146,3.727-4.285,5.372-6.377
                       c14.528-18.477,22.306-38.833,24.286-52.724h4.713c12.258,0,22.231-9.972,22.231-22.231v-11.396
                       c0-8.181-4.602-15.594-11.523-19.441V106.05c0-4.141-3.357-7.498-7.498-7.498s-7.497,3.356-7.497,7.498v30.764
@@ -487,21 +658,32 @@
                       C312.982,314.23,312.782,314.7,312.58,315.18z M330.814,292.21c-0.001,0-0.003-0.001-0.004-0.001
                       c-0.006-0.002-0.013-0.003-0.019-0.006c-4.35-1.305-8.99-1.089-13.157,0.498c-3.019-3.294-5.118-8.157-5.118-12.861v-21.835
                       c22.469,3.312,39.908,20.297,44.232,42.029L330.814,292.21z M389.001,398.375c0,13.124-10.677,23.8-23.8,23.8
-                      s-23.8-10.676-23.8-23.8c0-13.124,10.677-23.8,23.8-23.8S389.001,385.251,389.001,398.375z"/>
-                    </g>
-                  </svg>
+                      s-23.8-10.676-23.8-23.8c0-13.124,10.677-23.8,23.8-23.8S389.001,385.251,389.001,398.375z" />
+                      </g>
+                    </svg>
                   </div>
-                  <h2 class="st-funfact-number st-counter"> 3 </h2>
-                  <div class="st-funfact-title">Qualified Doctors</div>
+                  <h2>US &amp; UK</h2>
+
+
+
+                  <div class="st-funfact-title">Qualified Doctor</div>
                 </div>
                 <div class="st-height-b30 st-height-lg-b30"></div>
               </div><!-- .col -->
               <div class="col-lg-6">
                 <div class="st-funfact st-style1">
                   <div class="st-funfact-icon st-dip-blue-box">
-                    <svg   enable-background="new 0 0 511.619 511.619"  viewBox="0 0 511.619 511.619"  xmlns="http://www.w3.org/2000/svg"><g><path d="m504.12 423.958c-.003 0-.006 0-.009 0l-28.68.033-.031-24.191c-.005-4.139-3.362-7.491-7.5-7.491-.003 0-.006 0-.009 0-4.143.005-7.496 3.367-7.491 7.509l.031 24.19-112.203.13-.111-96.11 77.654-.09c3.963-.004 7.686-1.551 10.484-4.355s4.336-6.531 4.331-10.493l-.09-78.359c-.005-3.962-1.552-7.686-4.356-10.483-2.8-2.793-6.519-4.331-10.475-4.331-.006 0-.012 0-.019 0l-77.655.089-.036-31.016 112.203-.128.201 176.954c.005 4.14 3.361 7.492 7.5 7.492h.009c4.143-.005 7.497-3.366 7.492-7.508l-.201-176.955 14.762-.017c11.396-.016 20.654-9.298 20.639-20.688l-.02-19.672c-.015-11.393-9.286-20.65-20.669-20.65-.009 0-.02 0-.028 0l-48.04.05c-4.142.004-7.497 3.366-7.492 7.508.004 4.14 3.361 7.492 7.5 7.492h.008l48.042-.05h.007c3.124 0 5.668 2.542 5.672 5.668l.02 19.672c.004 3.122-2.535 5.666-5.658 5.67l-141.964.161-.036-31.01 59.917-.071c4.142-.005 7.496-3.367 7.491-7.509-.005-4.139-3.362-7.491-7.5-7.491-.003 0-.006 0-.009 0l-59.916.071-.041-35.216c-.006-5.53-2.166-10.727-6.081-14.632-3.909-3.9-9.101-6.046-14.622-6.046-.008 0-.017 0-.024 0l-143.451.166c-5.53.006-10.727 2.166-14.632 6.081s-6.053 9.116-6.046 14.646l.041 35.217-141.967.165c-5.521.006-10.709 2.164-14.608 6.076-3.896 3.909-6.038 9.102-6.031 14.621l.022 19.675c.006 5.52 2.162 10.707 6.068 14.604 3.901 3.892 9.083 6.034 14.593 6.034h.026l14.847-.017v22.456c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-22.474l112.119-.13.036 31.014-77.65.09c-3.963.004-7.686 1.551-10.484 4.355s-4.336 6.531-4.331 10.494l.09 78.359c.005 3.962 1.552 7.686 4.356 10.483 2.8 2.793 6.519 4.331 10.475 4.331h.019l77.651-.089.111 96.11-112.391.13v-178.672c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v178.69l-28.488.033c-4.143.005-7.497 3.367-7.492 7.509.005 4.139 3.361 7.491 7.5 7.491h.009l496.619-.575c4.142-.005 7.496-3.367 7.491-7.509-.005-4.138-3.361-7.491-7.499-7.491zm-78.625-189.041.09 78.022-77.486.09-.09-78.022zm-404.38-60.546c-.002 0-.004 0-.007 0-1.511 0-2.931-.587-4-1.653-1.07-1.068-1.661-2.489-1.663-4.003l-.022-19.675c-.002-1.516.586-2.941 1.656-4.015 1.068-1.072 2.489-1.663 4.001-1.665l141.966-.164.036 31.011zm64.645 138.962-.09-78.022 77.482-.09.09 78.022zm92.227-220.372c-.002-1.523.59-2.956 1.666-4.034s2.507-1.673 4.03-1.675l143.451-.166h.007c3.141 0 5.699 2.554 5.703 5.696l.383 331.375-18.744.022-.153-132.263c-.007-6.323-2.435-12.271-6.835-16.749-4.434-4.511-10.334-6.994-16.618-6.994-.009 0-.019 0-.028 0l-70.459.082c-6.294.007-12.2 2.505-16.629 7.033-4.39 4.488-6.804 10.441-6.796 16.765l.153 132.263-18.748.022zm33.978 199.072c-.003-2.372.892-4.595 2.519-6.258 1.588-1.624 3.692-2.52 5.924-2.522l70.459-.082h.01c2.228 0 4.33.891 5.919 2.508 1.631 1.66 2.531 3.88 2.534 6.252l.153 132.263-87.365.101z"/><path d="m207.012 200.158h.018l25.008-.029.029 25.008c.009 7.715 6.289 13.985 14 13.985h.018l19.004-.022c3.74-.004 7.255-1.464 9.896-4.112 2.642-2.647 4.094-6.166 4.089-9.906l-.029-25.008 25.007-.029c7.72-.008 13.994-6.296 13.986-14.018l-.022-19.005c-.004-3.74-1.465-7.254-4.113-9.896-2.644-2.638-6.154-4.089-9.888-4.089-.005 0-.012 0-.018 0l-25.008.029-.029-25.007c-.004-3.74-1.464-7.254-4.112-9.896-2.644-2.638-6.155-4.09-9.888-4.09-.005 0-.012 0-.018 0l-19.005.022c-3.74.004-7.254 1.465-9.896 4.113-2.641 2.647-4.093 6.166-4.089 9.905l.029 25.008-25.007.029c-3.74.004-7.255 1.464-9.896 4.112-2.642 2.648-4.094 6.166-4.089 9.906l.022 19.004c.004 3.74 1.464 7.255 4.112 9.896 2.645 2.639 6.156 4.09 9.889 4.09zm32.489-32.045c4.142-.005 7.496-3.367 7.491-7.509l-.037-31.509 17.007-.02.037 31.51c0 .259.014.514.04.766.388 3.779 3.58 6.725 7.46 6.725h.009l31.509-.037.02 17.007-31.51.037c-4.142.005-7.496 3.367-7.491 7.509l.037 31.509-17.008.02-.037-31.51c-.005-4.139-3.361-7.491-7.5-7.491-.002 0-.006 0-.009 0l-31.509.037-.02-17.007z"/></g></svg>
+                    <svg enable-background="new 0 0 511.619 511.619" viewBox="0 0 511.619 511.619"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <path
+                          d="m504.12 423.958c-.003 0-.006 0-.009 0l-28.68.033-.031-24.191c-.005-4.139-3.362-7.491-7.5-7.491-.003 0-.006 0-.009 0-4.143.005-7.496 3.367-7.491 7.509l.031 24.19-112.203.13-.111-96.11 77.654-.09c3.963-.004 7.686-1.551 10.484-4.355s4.336-6.531 4.331-10.493l-.09-78.359c-.005-3.962-1.552-7.686-4.356-10.483-2.8-2.793-6.519-4.331-10.475-4.331-.006 0-.012 0-.019 0l-77.655.089-.036-31.016 112.203-.128.201 176.954c.005 4.14 3.361 7.492 7.5 7.492h.009c4.143-.005 7.497-3.366 7.492-7.508l-.201-176.955 14.762-.017c11.396-.016 20.654-9.298 20.639-20.688l-.02-19.672c-.015-11.393-9.286-20.65-20.669-20.65-.009 0-.02 0-.028 0l-48.04.05c-4.142.004-7.497 3.366-7.492 7.508.004 4.14 3.361 7.492 7.5 7.492h.008l48.042-.05h.007c3.124 0 5.668 2.542 5.672 5.668l.02 19.672c.004 3.122-2.535 5.666-5.658 5.67l-141.964.161-.036-31.01 59.917-.071c4.142-.005 7.496-3.367 7.491-7.509-.005-4.139-3.362-7.491-7.5-7.491-.003 0-.006 0-.009 0l-59.916.071-.041-35.216c-.006-5.53-2.166-10.727-6.081-14.632-3.909-3.9-9.101-6.046-14.622-6.046-.008 0-.017 0-.024 0l-143.451.166c-5.53.006-10.727 2.166-14.632 6.081s-6.053 9.116-6.046 14.646l.041 35.217-141.967.165c-5.521.006-10.709 2.164-14.608 6.076-3.896 3.909-6.038 9.102-6.031 14.621l.022 19.675c.006 5.52 2.162 10.707 6.068 14.604 3.901 3.892 9.083 6.034 14.593 6.034h.026l14.847-.017v22.456c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-22.474l112.119-.13.036 31.014-77.65.09c-3.963.004-7.686 1.551-10.484 4.355s-4.336 6.531-4.331 10.494l.09 78.359c.005 3.962 1.552 7.686 4.356 10.483 2.8 2.793 6.519 4.331 10.475 4.331h.019l77.651-.089.111 96.11-112.391.13v-178.672c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v178.69l-28.488.033c-4.143.005-7.497 3.367-7.492 7.509.005 4.139 3.361 7.491 7.5 7.491h.009l496.619-.575c4.142-.005 7.496-3.367 7.491-7.509-.005-4.138-3.361-7.491-7.499-7.491zm-78.625-189.041.09 78.022-77.486.09-.09-78.022zm-404.38-60.546c-.002 0-.004 0-.007 0-1.511 0-2.931-.587-4-1.653-1.07-1.068-1.661-2.489-1.663-4.003l-.022-19.675c-.002-1.516.586-2.941 1.656-4.015 1.068-1.072 2.489-1.663 4.001-1.665l141.966-.164.036 31.011zm64.645 138.962-.09-78.022 77.482-.09.09 78.022zm92.227-220.372c-.002-1.523.59-2.956 1.666-4.034s2.507-1.673 4.03-1.675l143.451-.166h.007c3.141 0 5.699 2.554 5.703 5.696l.383 331.375-18.744.022-.153-132.263c-.007-6.323-2.435-12.271-6.835-16.749-4.434-4.511-10.334-6.994-16.618-6.994-.009 0-.019 0-.028 0l-70.459.082c-6.294.007-12.2 2.505-16.629 7.033-4.39 4.488-6.804 10.441-6.796 16.765l.153 132.263-18.748.022zm33.978 199.072c-.003-2.372.892-4.595 2.519-6.258 1.588-1.624 3.692-2.52 5.924-2.522l70.459-.082h.01c2.228 0 4.33.891 5.919 2.508 1.631 1.66 2.531 3.88 2.534 6.252l.153 132.263-87.365.101z" />
+                        <path
+                          d="m207.012 200.158h.018l25.008-.029.029 25.008c.009 7.715 6.289 13.985 14 13.985h.018l19.004-.022c3.74-.004 7.255-1.464 9.896-4.112 2.642-2.647 4.094-6.166 4.089-9.906l-.029-25.008 25.007-.029c7.72-.008 13.994-6.296 13.986-14.018l-.022-19.005c-.004-3.74-1.465-7.254-4.113-9.896-2.644-2.638-6.154-4.089-9.888-4.089-.005 0-.012 0-.018 0l-25.008.029-.029-25.007c-.004-3.74-1.464-7.254-4.112-9.896-2.644-2.638-6.155-4.09-9.888-4.09-.005 0-.012 0-.018 0l-19.005.022c-3.74.004-7.254 1.465-9.896 4.113-2.641 2.647-4.093 6.166-4.089 9.905l.029 25.008-25.007.029c-3.74.004-7.255 1.464-9.896 4.112-2.642 2.648-4.094 6.166-4.089 9.906l.022 19.004c.004 3.74 1.464 7.255 4.112 9.896 2.645 2.639 6.156 4.09 9.889 4.09zm32.489-32.045c4.142-.005 7.496-3.367 7.491-7.509l-.037-31.509 17.007-.02.037 31.51c0 .259.014.514.04.766.388 3.779 3.58 6.725 7.46 6.725h.009l31.509-.037.02 17.007-31.51.037c-4.142.005-7.496 3.367-7.491 7.509l.037 31.509-17.008.02-.037-31.51c-.005-4.139-3.361-7.491-7.5-7.491-.002 0-.006 0-.009 0l-31.509.037-.02-17.007z" />
+                      </g>
+                    </svg>
                   </div>
-                  <h2 class="st-funfact-number st-counter"><span>98%</span></h2>
+                  <h2 class="st-funfact-number">98%</h2>
 
                   <div class="st-funfact-title"> Success Rate</div>
                 </div>
@@ -510,21 +692,17 @@
             </div>
           </div>
           <div class="col-xl-6 wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s">
-            <div class="st-video-block st-style1 st-zoom">
-              <div class="st-video-block-img st-zoom-in st-dynamic-bg" data-src="assets/img/video-block-img.jpg"></div>
-              <a class="st-play-btn st-style1 st-video-open">
-               
-                <img src="assets/img/MainLogo.png" alt="Nischinto" style="height: 45px; width: 142px;">
-              </a>
-            </div>
-          </div><!-- .col -->
+            
+
+                <img src="assets/img/sample.jpeg" alt="Nischinto" style="height: 435px; width: 642px;">
+           
         </div>
       </div>
     </section>
     <!-- End FunFact Aection -->
 
     <!-- Start Pricing Table -->
-    
+
     <!-- End Pricing Table -->
 
     <!-- Start FAQ Section -->
@@ -545,73 +723,81 @@
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" ">
             <h2 class="st-accordian-heading">Frequently Asked Questions</h2>
             <div class="st-accordian-wrap">
               <div class="st-accordian active ">
-                <div class="st-accordian-title">
+                <div class="st-accordian-title" style="background-color: #66387e; color: #fff;">
                   Are Varicose Veins a Serious Health Problem?
                   <span class="st-accordian-toggle fa fa-angle-down"></span>
                 </div>
-                <div class="st-accordian-body">Varicose veins is a progressive disease. It may cause tolerable symptoms like burning and itching, but as the condition becomes more serious, varicose veins cause swelling and painful ulcers. Early treatment is required to keep your body pain-free and your venous system health. 
+                <div class="st-accordian-body">Varicose veins is a progressive disease. It may cause tolerable symptoms
+                  like burning and itching, but as the condition becomes more serious, varicose veins cause swelling and
+                  painful ulcers. Early treatment is required to keep your body pain-free and your venous system
+                  healthy.
                 </div>
               </div><!-- .st-accordian -->
               <div class="st-accordian">
-                <div class="st-accordian-title">
-                  How Are Varicose Veins Treated? 
+                <div class="st-accordian-title" style="background-color: #66387e; color: #fff;">
+                  How Are Varicose Veins Treated?
                   <span class="st-accordian-toggle fa fa-angle-down"></span>
                 </div>
-                <div class="st-accordian-body">At Hyderabad Vein Center, only non-surgical methods are used to treat varicose veins. Local anaesthesia is used before the procedure, so you will not feel any pain, and you can start walking within minutes of the procedure.
+                <div class="st-accordian-body">At Hyderabad Vein Center, only non-surgical methods are used to treat
+                  varicose veins. Local anaesthesia is used before the procedure, so you will not feel any pain, and you
+                  can start walking within a few hours of the procedure.
                 </div>
               </div><!-- .st-accordian -->
               <div class="st-accordian">
-                <div class="st-accordian-title">
-                  Will Insurance Cover My Treatment?   
+                <div class="st-accordian-title" style="background-color: #66387e; color: #fff;">
+                  Will Insurance Cover My Treatment?
                   <span class="st-accordian-toggle fa fa-angle-down"></span>
                 </div>
-                <div class="st-accordian-body">We accept most major insurances in India. However, extent and details of coverage depend on your insurance plan. Please note that we do not accept Aarogyasri Health Insurance.
+                <div class="st-accordian-body">We accept most major insurances in India. However, the amount of coverage
+                  depends on your insurance plan. Please note that we do not accept Aarogyasri Health Insurance.
                 </div>
               </div><!-- .st-accordian -->
               <div class="st-accordian">
-                <div class="st-accordian-title">
+                <div class="st-accordian-title" style="background-color: #66387e; color: #fff;">
                   Will I Be Asleep During the Treatment?
                   <span class="st-accordian-toggle fa fa-angle-down"></span>
                 </div>
-                <div class="st-accordian-body">No, since only local anaesthesia is used, you will be awake during the treatment. However, the numbing affect of anaesthesia will ensure that you feel little to no pain.
+                <div class="st-accordian-body">No, since only local anaesthesia is used, you will be awake during the
+                  treatment. However, the numbing affect of anaesthesia will ensure that you feel little to no pain.
                 </div>
               </div><!-- .st-accordian -->
               <div class="st-accordian">
-                <div class="st-accordian-title">
+                <div class="st-accordian-title" style="background-color: #66387e; color: #fff;">
                   How Long Does Varicose Veins Treatment Take?
                   <span class="st-accordian-toggle fa fa-angle-down"></span>
                 </div>
-                <div class="st-accordian-body">The treatment takes between 30 minutes to an hour, depending on your condition.</div>
+                <div class="st-accordian-body">The treatment takes between 30 minutes to an hour, depending on your
+                  condition.</div>
               </div><!-- .st-accordian -->
             </div><!-- .st-accordian-wrap -->
           </div>
         </div>
       </div>
-      <div class="st-height-b120 st-height-lg-b80"></div>
+      
     </section>
     <!-- End FAQ Section -->
 
     <!-- Start News Letter -->
-    
+
     <!-- End News Letter -->
 
     <!-- Start Blog Section -->
-   
+
     <!-- End Blog Section -->
 
     <!-- Start Logo Carousel -->
-   
+
     <!-- End Logo Carousel -->
 
     <!-- Start Contact Section -->
-   
-    
 
-    <section class="st-shape-wrap" id="contact">
+
+
+    <!-- <section class="st-shape-wrap" id="contact">
       <div class="st-shape1"><img src="assets/img/shape/contact-shape1.svg" alt="shape1"></div>
       <div class="st-shape2"><img src="assets/img/shape/contact-shape2.svg" alt="shape2"></div>
       <div class="st-height-b120 st-height-lg-b80"></div>
@@ -626,8 +812,8 @@
           </div>
         </div>
         <div class="st-height-b40 st-height-lg-b40"></div>
-      </div>
-      <!-- <div class="container">
+      </div> -->
+    <!-- <div class="container">
         <div class="row">
           <div class="col-lg-10 offset-lg-1">
             <form method="post"
@@ -679,7 +865,7 @@
         </div>
       </div> -->
 
-      <!-- <div class="container">
+    <!-- <div class="container">
         <form method="post" action="https://script.google.com/macros/s/AKfycbxOM_dx2EWIX-83GeMi88ITemMe2LD4oAffhXf2jNLqiwx2LfCsXhAhLQNeyYh0wxNQkg/exec" name="contact-form">
             <h4>Contact Us</h4>
             <input type="text" name="your-name" placeholder="Name" required>
@@ -695,130 +881,232 @@
       <div class="st-shape2"><img src="assets/img/shape/contact-shape2.svg" alt="shape2"></div>
       <div class="st-height-b120 st-height-lg-b80"></div>
       <div class="container">
-          <div class="st-section-heading st-style1">
-              <h2 class="st-section-heading-title">Contact Us</h2>
-              <div class="st-seperator"></div>
-              <div class="st-section-heading-subtitle">
-                  Reach out to us for any queries, and we will get back to you.
-              </div>
+        <div class="st-section-heading st-style1">
+          <h2 class="st-section-heading-title" style="color: #29265c;">Book Your Appointment</h2>
+          <div class="st-seperator"></div>
+          <div class="st-section-heading-subtitle">
+           <strong>  Contact Us Now on +91 7207947968 & Get <h3>Ultrasound Doppler Screening Worth ₹4500 for FREE. </h3></strong>
           </div>
-          <div class="st-height-b40 st-height-lg-b40"></div>
+        </div>
+     
       </div>
       <div class="container">
-          <div class="row">
-              <div class="col-lg-10 offset-lg-1">
-                  <!-- Contact Form -->
-                  <form method="POST" action="https://script.google.com/macros/s/AKfycbxOM_dx2EWIX-83GeMi88ITemMe2LD4oAffhXf2jNLqiwx2LfCsXhAhLQNeyYh0wxNQkg/exec" name="contact-form">
-                      <div id="st-alert1"></div>
-                      <div class="row">
-                          <div class="col-lg-6">
-                              <div class="st-form-field st-style1">
-                                  <label for="your-name">Full Name</label>
-                                  <input type="text" name="your-name" placeholder="Your Name" required>
-                              </div>
-                          </div>
-                          <div class="col-lg-6">
-                              <div class="st-form-field st-style1">
-                                  <label for="your-number">Phone Number</label>
-                                  <input type="text" name="your-number" placeholder="Your Number" required>
-                              </div>
-                          </div>
-                          <div class="col-lg-6">
-                              <div class="st-form-field st-style1">
-                                  <label for="your-email">Email Address</label>
-                                  <input type="email" name="your-email" placeholder="example@gmail.com" required>
-                              </div>
-                          </div>
-                          <div class="col-lg-6">
-                              <div class="st-form-field st-style1">
-                                  <label for="udate">Booking Date</label>
-                                  <input name="udate" type="text" placeholder="dd/mm/yy">
-                                  <div class="form-field-icon"><i class="fa fa-calendar"></i></div>
-                              </div>
-                          </div>
-                          <div class="col-lg-12">
-                              <div class="st-form-field st-style1">
-                                  <label for="message">Message</label>
-                                  <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
-                              </div>
-                          </div>
-                          <div class="col-lg-12">
-                              <button class="st-btn st-style1 st-color1 st-size-medium" type="submit" id="submit">
-                                  Submit
-                              </button>
-                          </div>
-                      </div>
-                  </form>
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <!-- Contact Form -->
+            <form method="POST"
+              action="https://script.google.com/macros/s/AKfycbwjgpPM0v50FmoTeo88GKESf0L-0vWmZMSgS5ugcObwghJySGIbF3NgALNlw4YC4n9Y8g/exec"
+              name="contact-form">
+              <div id="st-alert1"></div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="st-form-field st-style1">
+                    <label for="your-name">Full Name</label>
+                    <input type="text" name="your-name" placeholder="Your Name" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="st-form-field st-style1">
+                    <label for="your-number">Phone Number</label>
+                    <input type="text" name="your-number" placeholder="Your Number" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="st-form-field st-style1">
+                    <label for="your-email">Email Address</label>
+                    <input type="email" name="your-email" placeholder="example@gmail.com" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="st-form-field st-style1">
+                    <label for="udate">Booking Date</label>
+                    <input name="udate" type="text" placeholder="dd/mm/yy">
+                    <div class="form-field-icon"><i class="fa fa-calendar"></i></div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="st-form-field st-style1">
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <button class="st-btn st-style1 st-color1 st-size-medium" type="submit" id="submit" style="background-color: #66387e;">
+                    Book Appointment
+                  </button>
+                </div>
               </div>
+            </form>
           </div>
+        </div>
       </div>
-  
-      <div class="st-height-b120 st-height-lg-b80"></div>
-  </section>
-  
 
-      <div class="st-height-b120 st-height-lg-b80"></div>
+      
     </section>
+
+ 
+
     
-   
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+        <!-- Removed the close button -->
+         <span class="close-btn">&times;</span> 
+
+         <section class="st-shape-wrap" id="contact">
+          <div class="st-shape1"><img src="assets/img/shape/contact-shape1.svg" alt="shape1"></div>
+          <div class="st-shape2"><img src="assets/img/shape/contact-shape2.svg" alt="shape2"></div>
+          <div class="st-height-b120 st-height-lg-b80"></div>
+          <div class="container">
+            <div class="st-section-heading st-style1">
+              <h2 class="st-section-heading-title" style="color: #29265c;">Book Your Appointment</h2>
+              <div class="st-seperator"></div>
+              <div class="st-section-heading-subtitle">
+               <strong>  Contact Us Now on +91 7207947968 & Get <h3>Ultrasound Doppler Screening Worth ₹4500 for FREE. </h3></strong>
+              </div>
+            </div>
+         
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                <!-- Contact Form -->
+                <form method="POST"
+                  action="https://script.google.com/macros/s/AKfycbwjgpPM0v50FmoTeo88GKESf0L-0vWmZMSgS5ugcObwghJySGIbF3NgALNlw4YC4n9Y8g/exec"
+                  name="contact-form">
+                  <div id="st-alert1"></div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="st-form-field st-style1">
+                        <label for="your-name">Full Name</label>
+                        <input type="text" name="your-name" placeholder="Your Name" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="st-form-field st-style1">
+                        <label for="your-number">Phone Number</label>
+                        <input type="text" name="your-number" placeholder="Your Number" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="st-form-field st-style1">
+                        <label for="your-email">Email Address</label>
+                        <input type="email" name="your-email" placeholder="example@gmail.com" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="st-form-field st-style1">
+                        <label for="udate">Booking Date</label>
+                        <input name="udate" type="text" placeholder="dd/mm/yy">
+                        <div class="form-field-icon"><i class="fa fa-calendar"></i></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="st-form-field st-style1">
+                        <label for="message">Message</label>
+                        <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <button class="st-btn st-style1 st-color1 st-size-medium" type="submit" id="submit" style="background-color: #66387e;">
+                        Book Appointment
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
     
+          
+        </section>
+       
+
+      </div>
+    </div>
     
+
+
+
+ 
+
+    <div class="st-height-b120 st-height-lg-b80"></div>
+    </section>
+
+
+
+
 
 
 
 
     <!-- End Contact Section -->
-    
-  
+
+
   </div>
   <!-- Start Footer -->
   <footer class="st-site-footer st-sticky-footer st-dynamic-bg" data-src="assets/img/footer-bg.png">
     <div class="st-main-footer">
       <div class="container">
         <div class="row">
+          <!-- Footer Widget 1: About -->
           <div class="col-lg-3">
             <div class="st-footer-widget">
               <div class="st-text-field">
-                <img src="assets/img/MainLogo.png" alt="Nischinto" class="st-footer-logo">
+                <!-- Ensure the logo is not affected by other elements -->
+                <img src="assets/img/MainLogo.png" alt="Nischinto" class="st-footer-logo"
+                  style="max-width: 100%; height: auto;">
                 <div class="st-height-b25 st-height-lg-b25"></div>
-                <div class="st-footer-text">Hyderabad Vein Center is India's first and only center providing end-to-end vein care.</div>
+                <div class="st-footer-text" style="font-size: medium;"><strong>Hyderabad Vein Center is India's first and only center providing end-to-end
+                  vein care.</strong> </div>
                 <div class="st-height-b25 st-height-lg-b25"></div>
                 <ul class="st-social-btn st-style1 st-mp0">
-                  <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                  <li><a href="#"><i class="fab fa-facebook-square" style="color: #66387e;"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin" style="color: #66387e;"></i></a></li>
+                  <li><a href="#"><i class="fab fa-pinterest-square" style="color: #66387e;"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter-square" style="color: #66387e;"></i></a></li>
                 </ul>
+                <br> <br><div style="font-size: medium;">  <strong>Copyrights Reserved to Hyderabad Vein Center 2024</strong> </div>
               </div>
             </div>
           </div><!-- .col -->
-          
+
+          <!-- Footer Widget 2: Contact Us -->
           <div class="col-lg-3">
             <div class="st-footer-widget">
-              <h2 class="st-footer-widget-title" style="margin-top: 10px;">Contact Us</h2>
+              <h2 class="st-footer-widget-title" style="margin-top: 10px; color: #66387e;  " >Contact Us</h2>
               <ul class="st-footer-contact-list st-mp0">
-                <li><span class="st-footer-contact-title">Address:</span> Jubilee Hills, Hyderabad</li>
-                <li><span class="st-footer-contact-title">Email:</span> info@hyderabadveincenter.com</li>
-                <li><span class="st-footer-contact-title">Phone:</span> +91 7207947968 </li>
+                <li><span class="st-footer-contact-title"> <strong> Address:</strong> </span> <strong> kukatpally, Hyderabad</strong>  </li>
+                <li><span class="st-footer-contact-title"><strong>Email:</strong></span>
+                  <a href="mailto:info@hyderabadveincenter.com"><strong>info@hyderabadveincenter.com</strong></a>
+                </li>
+                <li><span class="st-footer-contact-title"><strong>Phone:</strong>  </span>
+                  <a href="tel:+917207947968"><strong>+91 7207947968</strong>  </a>
+                </li>
               </ul>
             </div>
           </div><!-- .col -->
-        </div>
-      </div>
-    </div>
-    <div class="st-copyright-wrap">
-      <div class="container">
-        <div class="st-copyright-in">
-          <div class="st-left-copyright">
-            <div class="st-copyright-text">Copyrights Reserved to Hyderabad Vein Center 2024 </div>
-          </div>
-          <div class="st-right-copyright">
-            <div id="st-backtotop"><i class="fas fa-angle-up"></i></div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+          <!-- Footer Widget 3: Google Map -->
+          <div class="col-lg-6">
+            <div class="st-footer-widget">
+                <h2 class="st-footer-widget-title" style="color: #66387e;">Find Us on Google Maps</h2>
+                <div class="st-google-map" style="width: 100%; height: 100px; margin-left: 40px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.289021557113!2d78.39578757377285!3d17.49371139973627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91fe3fb6ecd7%3A0xc3fa10fec8a6ff52!2sAvis%20Vascular%20Centre%20-%20Kukatpally%20(%20Dr.%20Rajah%20V%20Koppala%20)!5e0!3m2!1sen!2sin!4v1734101106752!5m2!1sen!2sin"
+                        width="100%" height="100" frameborder="0" style="border:0; margin-bottom: 100px;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+        </div><!-- .col -->
+        
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- .st-main-footer -->
+
+    <!-- Copyright Section -->
+   
   </footer>
+
   <!-- End Footer -->
 
   <!-- Start Video Popup -->
@@ -838,6 +1126,46 @@
   </div>
   <!-- End Video Popup -->
 
+  <script>
+    // Get the modal and close button
+    var modal = document.getElementById("contact-modal");
+    var closeBtn = document.getElementsByClassName("close-btn")[0];
+    
+    // Show the modal when the page loads
+    window.onload = function() {
+      modal.style.display = "block";
+    };
+    
+    // Close the modal if the user clicks anywhere outside the modal content
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+    
+    // Close the modal when the close button (cross mark) is clicked
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    };
+    </script>
+
+  <script>
+    document.querySelectorAll('.st-smooth-move').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();  // Prevent default anchor behavior
+        
+        // Get the section id from the data-target attribute
+        const targetSection = this.getAttribute('data-target');
+  
+        // Smoothly scroll to the target section
+        document.querySelector(`#${targetSection}`).scrollIntoView({ behavior: 'smooth' });
+  
+        // Change the URL without reloading the page
+        history.pushState(null, null, `/${targetSection}`);
+      });
+    });
+  </script>
+
   <!-- Scripts -->
   <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
   <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
@@ -852,7 +1180,8 @@
   <script src="assets/js/textRotate.min.js"></script>
   <script src="assets/js/select2.min.js"></script>
   <script src="assets/js/main.js"></script>
- 
-  
+
+
 </body>
+
 </html>
